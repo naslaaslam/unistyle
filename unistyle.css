@@ -1,0 +1,52 @@
+body{
+    margin: 0;
+}
+
+header{
+    height: 60px;
+    width: auto;
+    background-color:dimgray;
+    border-radius: 20px;
+    padding: 10px;
+  
+
+}
+
+.main{ 
+     /* background-color: beige; */
+     height:50px;
+     width:100%;
+    display: flex;            
+    justify-content:space-between;    
+  align-items:center; 
+
+}
+.logo{
+    /* background-color: aquamarine; */
+    height:50px;
+    width:150px;
+    
+}
+.link{
+    display: flex;
+    gap: 30px;
+    margin-right:350px;
+    margin-left: 100px;
+    
+}
+.link a{
+   /* border: 1px solid black; */
+   padding: 5px;
+   font-size: 20px;
+   font-weight: bold;
+   color: black;
+   
+}
+
+.buttons button{
+ padding: 5px;
+   font-size: 20px;
+   font-weight: bold;
+   color: black;  
+   margin-right: 50px; 
+}
