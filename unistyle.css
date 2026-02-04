@@ -25,18 +25,12 @@ header {
   color: aliceblue;
   border-bottom: 0.1px solid white;
 }
-@media (max-width:600px){
-    .main .link{
-display: none;
-    }
-    /* .main .logo{
-        height: 30px;
-        width: 50px;
-    } */
-    
+@media (max-width: 600px) {
+  .link {
+    display: none;
+  }
 }
 .logo {
-  
   color: #ffffff;
   display: flex;
   align-items: center;
@@ -46,9 +40,8 @@ display: none;
   align-items: center;
   gap: 30px;
   /* margin-left:300px; */
-  justify-content: end;
+  justify-content: flex-end;
   /* background-color: aquamarine; */
-
 }
 .link a {
   /* border: 1px solid black; */
@@ -57,66 +50,72 @@ display: none;
   font-weight: bold;
   color: white;
   text-decoration: none;
-
 }
-.link a:hover{
-    color: goldenrod;
-    /* border-bottom: 1px solid white; */
+.link a:hover {
+  color: goldenrod;
+  /* border-bottom: 1px solid white; */
 }
 
- .button a{
-  color:black;
+.button a {
+  color: black;
   border-radius: 10px;
   background-color: #ffffff;
-
-  
 }
-.button:hover{
-    color: goldenrod;
-}
-
-.image {
-  position: fixed;
-  background-color: #ffffff;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+.button:hover {
+  color: goldenrod;
 }
 
 .landing {
   width: 100%;
   display: flex;
   justify-content: space-between;
-  height: calc(100vh - 60px);
+  align-items: center;
+  min-height: calc(100vh - 60px);
+  padding: 20px;
   background-color: black;
-  padding: 10px;
-  background-color: aqua;
+  gap: 40px;
+  flex-wrap: wrap;
 }
-@media (max-width:600px){
-.landingtext h1{
-  font-size: 50px;
+
+@media (max-width: 768px) {
+  .landing {
+    flex-direction: row;
+    align-items: center;
+    text-align: center;
+  }
 }
+
+.imagebox {
+  flex: 1;
+  max-width: 500px;
+  height: 85vh;
+  background-image: url(landing.jpg);
+  background-size: cover;
+  background-position: center;
+}
+@media (max-width: 600px) {
+  .imagebox {
+    height: 400px;
+    max-width: 100%;
+  }
+  .landingtext h1 {
+    font-size: 30px !important;
+  }
+  .landingtext p {
+    font-size: 15px !important;
+  }
+  .landingtext button {
+    width: 110px !important;
+    height: 50px !important;
+    font-size: 14px !important;
+  }
   
 }
-.imagebox {
-  height: 600px;
-  background-color:violet;
-  width: 500px;
-  margin-bottom: 100px;
-  background-image: url(landing.jpg);
-}
-.imagebox img {
-  max-width: 100%;
-  max-height: 100%;
-  display: block;
-  object-fit: contain;
-}
+
 .landingtext {
-  height: 400px;
-  width: 600px;
-  /* background-color: antiquewhite; */
-  margin-left: 200px;
-  margin-top: 70px;
+  flex: 1;
+  max-width: 600px;
+  margin: 0;
 }
 .landingtext h1 {
   font-family: "Playfair Display", serif;
@@ -138,8 +137,8 @@ display: none;
   font-family:
     "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
     "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
-  margin-top: 30px;
-  margin-left: 100px;
+  margin-right: auto;
+  margin-left: auto;
   border-radius: 10px;
   color: purple;
   background-color: beige;
@@ -147,10 +146,13 @@ display: none;
 .about {
   width: 100%;
   background-color: black;
-  height: 100vh;
+  height: 100%;
   justify-content: center;
   align-items: center;
   padding: 0px 40px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
 }
 .about h1 {
   color: goldenrod;
@@ -159,12 +161,13 @@ display: none;
 }
 
 .first {
-  /* background-color: blue; */
+  background-color: rgb(34, 32, 32);
   height: 210px;
   width: 1400px;
   display: flex;
   gap: 30px;
-  /* border: 0.1px solid wheat; */
+  border: 1px solid white;
+  border-radius: 10px;
 }
 .one:hover {
   transform: translateY(-8px);
@@ -180,11 +183,13 @@ display: none;
 }
 
 .second {
-  /* background-color: lightpink; */
+  background-color: rgb(39, 35, 35);
   height: 210px;
   width: 1400px;
   display: flex;
   gap: 250px;
+  border: 1px solid white;
+  border-radius: 10px;
 }
 .third {
   /* background-color: coral; */
@@ -192,6 +197,8 @@ display: none;
   width: 1400px;
   display: flex;
   gap: 30px;
+  border: 1px solid white;
+  border-radius: 10px;
 }
 .one {
   height: 210px;
@@ -303,6 +310,12 @@ display: none;
   grid-template-columns: repeat(3, 1fr);
   gap: 20px;
 }
+@media(max-width:600px){
+  .servicebox{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
 
 .service-card {
   background: black;
@@ -329,7 +342,7 @@ display: none;
   color: #ddd;
 }
 
-/* .service-card:hover{
-    transform: translateY(-8px);
-    box-shadow: 0 15px 30px rgba(0,0,0,0.3);
-} */
+.service-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.3);
+}
