@@ -15,16 +15,104 @@
           <a href="#aboutus">about</a>
           <a href="">services</a>
           <a href="">contact</a>
-          <div class="button">
-          <a href="register.html">
-            sign up
-          </a>
+          <div class="button" id="btn">
+            <a>sign up</a>
           </div>
           
         </div>
         
       </div>
     </header>
+
+
+
+
+<div class="popup" id="sign">
+  <div class="signupcontainer" >
+      <h1>Create Account</h1>
+      <p class="subtitle">Join UniStyle and book your perfect style</p>
+
+      <form>
+        <div class="inputbox">
+          <label>Full Name</label>
+          <input type="text" placeholder="Enter your name" required />
+        </div>
+
+        <div class="inputbox">
+          <label>Email</label>
+          <input type="email" placeholder="Enter your email" required />
+        </div>
+
+        <div class="inputbox">
+          <label>Password</label>
+          <input type="password" placeholder="Create password" required />
+        </div>
+
+        <div class="inputbox">
+          <label>Confirm Password</label>
+          <input type="password" placeholder="Confirm password" required />
+        </div>
+
+        <button type="submit">Sign Up</button>
+      </form>
+
+      <p class="logintext">
+        Already have an account?
+        <a id="log">Login</a>
+      </p>
+    </div>
+    </div>
+
+
+
+
+<div class="popup" id="login">
+
+ <div class="login-container" >
+      <h1>Welcome Back</h1>
+      <p class="subtitle">Login to book your next style</p>
+
+      <form>
+        <div class="inputbox">
+          <label>Email</label>
+          <input type="email" placeholder="Enter your email" required />
+        </div>
+
+        <div class="inputbox">
+          <label>Password</label>
+          <input type="password" placeholder="Enter your password" required />
+        </div>
+
+        <div class="options">
+          <label class="remember">
+            <input type="checkbox" /> Remember me
+          </label>
+          <a href="#">Forgot password?</a>
+        </div>
+
+        <button type="submit">Login</button>
+      </form>
+
+      <p class="signuptext">
+        Don’t have an account?
+        <a class="log" id="reg">Sign up</a>
+      </p>
+    </div>
+    </div>
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
     <section class="landing">
       <div class="landingtext">
         <h1>Book Your Favorite Barber with UniStyle</h1>
@@ -87,26 +175,22 @@
         </div>
       </div>
     </section>
-
-    <section id="aboutus">
+     <section id="aboutus">
       <div class="about">
         <h1>about us</h1>
+
         <div class="first">
           <div class="one"></div>
-
           <div class="onetext">
             <h2>our store</h2>
             <p>
-              Welcome to unistyle,where style meets comfort. We offer
-              professional barbering services for both men and women, blending
-              classic techniques with modern trends.Our skilled barbers and
-              stylists are dedicated to providing a personalized experience,
-              ensuring every visit leaves you looking and feeling your best.
-              From precision haircuts to relaxing grooming services, your
-              satisfaction is our top priority.
+              Welcome to UniStyle, where style meets comfort. We provide
+              professional grooming services with precision, care, and modern
+              techniques to help you look and feel your best.
             </p>
           </div>
         </div>
+
         <div class="second">
           <div class="twotext">
             <h2>our mission</h2>
@@ -121,12 +205,13 @@
           </div>
           <div class="twoo"></div>
         </div>
+
         <div class="third">
           <div class="three"></div>
           <div class="threetext">
             <h2>our vision</h2>
             <p>
-              Our vision is to become the go-to barber and grooming destination
+             Our vision is to become the go-to barber and grooming destination
               for everyone—men and women alike—known for excellence, creativity,
               and consistency.We strive to create a space where style meets
               relaxation, innovation meets tradition, and every client leaves
@@ -134,9 +219,8 @@
             </p>
           </div>
         </div>
-        <div></div>
       </div>
     </section>
-
+<script src="unistyle.js"></script>
   </body>
 </html>
